@@ -1,0 +1,137 @@
+{
+    "contractName": "Komentari",
+    "abi": [
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "submitter",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "string",
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "submissionTime",
+            "type": "uint256"
+          }
+        ],
+        "name": "ComplaintSubmitted",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "_text",
+            "type": "string"
+          }
+        ],
+        "name": "submitComplaint",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "complaintCount",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "name": "complaints",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "submitter",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "submissionTime",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getComplaints",
+        "outputs": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "submitter",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "text",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "submissionTime",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Komentari.Complaint[]",
+            "name": "",
+            "type": "tuple[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "networks": {
+      "11155111": {
+        "address": "0x7729924C5F2aF013FECBf48cDB120d9106668F83"
+      }
+    }
+  }
+  
